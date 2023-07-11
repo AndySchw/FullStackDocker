@@ -1,0 +1,4 @@
+h1 Medaillenspiegel
+    ul
+      each medaille in medaillen
+        li.textausgabe= medaille.name + ' - Gold: ' + medaille.gold + ', Silber: ' + medaille.silber + ', Bronze: ' + medaille.bronze + ', Gesamt: ' + medaille.gesamt

@@ -11,6 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^7.3.2"
+    "mongoose": "^7.3.2",
+    "path": "^0.12.7",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
