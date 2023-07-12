@@ -48,6 +48,24 @@ app.get('/', async (req, res) => {
   }
 });
 
+app.get('/about', async (req, res) => {
+  try {
+    const medaillen = await Medaillen.find();
+    res.send(medaillen);
+  } catch (err) {
+    res.status(500).send({ message: err.message });
+  }
+});
+
+app.get('/contact', async (req, res) => {
+  try {
+    const medaillen = await Medaillen.find();
+    res.send(medaillen);
+  } catch (err) {
+    res.status(500).send({ message: err.message });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server läuft auf http://localhost:${port}`);
 });
