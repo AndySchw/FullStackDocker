@@ -26,9 +26,9 @@ Um Ihre Anwendung aufzusetzen und zu starten, folgen Sie bitte diesen Schritten:
 5. Wenn Sie fertig sind, können Sie die Anwendung mit dem folgenden Befehl stoppen:
 
     ```bash
-    docker-compose down
+    docker-compose down -d
     ```
-    Dieser Befehl stoppt und entfernt die Container, Netzwerke und Volumes, die mit `docker-compose up` definiert und erstellt wurden.
+    Dieser Befehl stoppt und entfernt die Container, Netzwerke und Volumes, die mit `docker-compose up` definiert und erstellt wurden. Bei der Verwendung von `-d` sorgen sie dafür das beim herrunterfahren alle container und Volumen gelöscht werden.
 
 Bitte beachten Sie, dass diese Anleitung davon ausgeht, dass Sie Docker und Docker Compose korrekt auf Ihrem System installiert haben und grundlegende Kenntnisse in der Arbeit mit Docker haben. Sie können die offizielle Docker-Dokumentation für weitere Informationen konsultieren.
 
