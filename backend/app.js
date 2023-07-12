@@ -6,7 +6,7 @@ const Medaillen = require('./medaillen');
 const app = express();
 const port = 3000;
 
-// app.use(express.static('public')); // brauch ich nur wenn ich pug direckt von hier aus rendern möchte
+
   
 mongoose.connect('mongodb://mongodb:27017/TestDB', { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -17,6 +17,8 @@ db.once('open', function() {
   console.log('Wir sind mit der MongoDB verbunden');
 });
 
+
+// app.use(express.static('public')); // brauch ich nur wenn ich pug direckt von hier aus rendern möchte
 // app.set('view engine', 'pug');
 // app.set('views', path.join(__dirname, './public/views')); // brauch ich nur wenn ich pug direckt von hier aus rendern möchte
 
@@ -36,7 +38,7 @@ db.once('open', function() {
 app.use(express.json());
 
 
-// // Route zum Abrufen von Daten wird ausgegeben vom frontend container der mit axios danach fragt 
+// Route zum Abrufen von Daten wird ausgegeben vom frontend container der mit axios danach fragt 
 app.get('/', async (req, res) => {
   try {
     const medaillen = await Medaillen.find();

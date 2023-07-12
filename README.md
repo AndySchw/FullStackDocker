@@ -21,14 +21,14 @@ Um Ihre Anwendung aufzusetzen und zu starten, folgen Sie bitte diesen Schritten:
     ```bash
     docker-compose up -d --build
     ```
-4. Öffnen Sie Ihren Webbrowser und navigieren Sie zu `http://localhost:8080`, um das Frontend zu sehen, und zu `http://localhost:3000`, um das Backend zu sehen.
+4. Öffnen Sie Ihren Webbrowser und navigieren Sie zu `http://localhost:4000`, um das Frontend zu sehen, und zu `http://localhost:3000`, um das Backend zu sehen.
 
 5. Wenn Sie fertig sind, können Sie die Anwendung mit dem folgenden Befehl stoppen:
 
     ```bash
-    docker-compose down -d
+    docker-compose down -v
     ```
-    Dieser Befehl stoppt und entfernt die Container, Netzwerke und Volumes, die mit `docker-compose up` definiert und erstellt wurden. Bei der Verwendung von `-d` sorgen sie dafür das beim herrunterfahren alle container und Volumen gelöscht werden.
+    Dieser Befehl stoppt und entfernt die Container, Netzwerke und Volumes, die mit `docker-compose up` definiert und erstellt wurden. Bei der Verwendung von `-v` sorgen sie dafür das beim herrunterfahren alle Volumen mit gelöscht werden. Dabei bleiben die Images in Docker erhalten.
 
 Bitte beachten Sie, dass diese Anleitung davon ausgeht, dass Sie Docker und Docker Compose korrekt auf Ihrem System installiert haben und grundlegende Kenntnisse in der Arbeit mit Docker haben. Sie können die offizielle Docker-Dokumentation für weitere Informationen konsultieren.
 

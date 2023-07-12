@@ -1,9 +1,14 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
+const path = require('path');
+
 
 app.set('view engine', 'pug');
 app.set('views', './views');
+
+app.use('/includes', express.static(path.join(__dirname, 'includes')));
+
 
 app.get('/', async (req, res) => {
   try {
