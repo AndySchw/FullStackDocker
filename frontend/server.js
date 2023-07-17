@@ -22,7 +22,7 @@ app.get('/', async (req, res) => {
 
 app.get('/contact', async (req, res) => {
   try {
-    // Ändern Sie die URL nach Bedarf
+    // Ändern Sie die URL nach Bedarfe
     const response = await axios.get('http://app:3000');
     res.render('contact', { medaillen: response.data });
   } catch (err) {
